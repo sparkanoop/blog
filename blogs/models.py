@@ -22,3 +22,5 @@ class Post(models.Model):
 	view_count = models.IntegerField(default=0, editable=False)
 
 
+	def __unicode__(self):
+		return self.title
